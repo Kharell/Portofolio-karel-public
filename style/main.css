@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+
+
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-family: Monospace;
+  box-sizing: border-box;
+}
+
+
+
+
+/* Navbar styling */
+#navbar {
+    background-color:rgba(47, 79, 79, 1);
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: larger;
+    position: relative;
+    z-index: 2;
+    font-family: Monospace;
+  }
+  
+  .icon_profile {
+    background-color: rgba(199, 179, 2, 1);
+    display: flex;
+    align-items: center;
+    border-radius: 3%;
+    padding: 10px; 
+    border-radius: 5px;
+  }
+  
+  .icon_profile p {
+    margin: 0;
+  }
+
+  
+  
+  .icon_profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 30%;
+    margin-right: 10px;
+  }
+  
+  .List {
+    display: flex;
+    align-items: center;
+  }
+  
+  .List a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px; 
+  }
+
+  .List a:hover {
+    color: rgba(199, 179, 2, 1); 
+  }
+  
+
+
+
+
+/* Style Home */
+#home {
+ font-family: Monospace;
+  width: auto;
+  height: auto;
+}
+
+.satu {
+ position: absolute;
+ top: 40px; 
+  right: 0px; 
+  z-index: 1;
+}
+
+.dua {
+  
+  position: absolute;
+  max-width: 170px;
+  left: 100px;
+  margin-top: 50px;
+}
+
+.saya {
+  border-radius: 50px;
+  position:absolute;
+  right: 200px;
+  top: 250px;
+  max-width: 350px;
+  z-index: 3;
+  border: 5px solid rgb(254, 254, 254);
+}
+
+
+.tiga {
+  position: absolute;
+  z-index:  4;
+}
+
+.empat {
+  position: absolute;
+  right:440px;
+  max-width: 200px;
+  top: 590px ;
+}
+
+/* Efek hover untuk gambar */
+.saya:hover {
+  transform: scale(1.1); 
+  transition: transform 0.5s ease; 
+  cursor: pointer;
+}
+
+
+
+#home h3 {
+  margin: 50px;
+  font-family: Monospace;
+}
+
+#home h1 {
+  position: relative;
+  left:10%; 
+  color: white;
+  font-size: 35px;
+  
+}
+
+    /* Tambahkan animasi ke teks */
+    @keyframes textAnimation {
+      from { opacity: 0; }
+      to { opacity: 1; }
+  }
+
+    /* Tambahkan animasi ke teks */
+    @keyframes typing {
+      from { width: 0 }
+  }
+  /* Styling untuk efek ketik */
+  #textContainer {
+      overflow: hidden; /* Membuat teks tidak meluap keluar dari elemen */
+      white-space: nowrap; /* Membuat teks tidak memisahkan baris */
+      border-right: .15em solid rgba(199, 179, 2, 1); /* Efek cursor ketik */
+      animation: typing 3s steps(40, end); /* Kecepatan ketik dan efek */
+  }
+
+
+
+#home p {
+  position: relative;
+  color: white;
+  font-size: 1.0rem;
+  text-align: center;
+  margin-right: 700px; 
+}
+
+.ig  {
+  position: absolute;
+  right: 50%; 
+  transform: translateX(-20%); 
+}
+
+.ig a {
+  text-decoration: none;
+}
+
+.ig a h3 {
+  font-family: Cursive;
+  color: white;
+  font-size: 27px;
+  margin: 0;
+}
+
+
+.ig a:hover h3 {
+  color: rgba(199, 179, 2, 1); 
+}
+
+.ig a:hover  img {
+  transform: scale(1.1); 
+  color:rgba(199, 179, 2, 1) ;
+}
+
+
+.download-btn{
+  outline: none;
+  border: none;
+  color: #fff;
+  display: flex;
+  cursor: pointer;
+  padding: 16px 25px;
+  border-radius: 6px;
+  align-items: center;
+  white-space: nowrap;
+  background: #000000;
+  transition: all 0.5s ease;
+  right: 67%;
+  position: absolute;
+  font-family: Monospace;
+}
+.download-btn:hover{
+  background: rgba(199, 179, 2, 1);
+  color: #000;
+
+}
+.download-btn.timer{
+  color: #000;
+  background: none;
+  transition: none;
+  font-size: 1.6rem;
+  pointer-events: none;
+}
+.download-btn.timer b{
+  color: #ffffff;
+  padding: 0 8px;
+}
+.download-btn .icon{
+  font-size: 2rem;
+}
+.download-btn .text{
+  font-size: 1.5rem;
+  padding-left: 10px;
+}
+
+
+
+/* Skill section styling */
+#skills {
+  padding: 22px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  z-index: 5;
+  font-family: Monospace;
+}
+
+#skills h2:hover {
+  color: rgba(199, 179, 2, 1);
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.5s ease; 
+}
+
+#skills img {
+  border-radius: 30px;
+  max-width: 300px; 
+  padding: 20px 10px;
+  width: 500px; 
+  height: 300px;
+}
+
+#skills img:hover {
+  transform: scale(1.1); 
+  transition: transform 0.3s ease; 
+  cursor: pointer;
+}
+
+.card {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-family: Monospace;
+}
+
+.bio-body:hover {
+  color: rgba(199, 179, 2, 1);
+  cursor: pointer; 
+}
+
+.progress-bar {
+  background-color: rgba(199, 179, 2, 1);
+}
+
+
+/* style kontak */
+#contact {
+  padding: 20px;
+  color: white;
+  font-family: Monospace;
+}
+
+#contact .contact-form h2:hover {
+ color: rgba(199, 179, 2, 1);
+ cursor: pointer;
+}
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgba(199, 179, 2, 1);
+  color: black;
+}
+
+#footer {
+  background-color: rgba(47, 79, 79, 1);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  position: relative;
+  font-size: 120%;
+}
+
+#footer p:hover {
+  color: rgba(199, 179, 2, 1) ;
+  cursor: pointer;
+}
